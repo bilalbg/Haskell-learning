@@ -1,0 +1,2 @@
+# Haskell-projects
+Learning haskell
