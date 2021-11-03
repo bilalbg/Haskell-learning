@@ -39,6 +39,17 @@ addtwice :: (t -> t) -> t -> t
 --brackets required to indicate that a function is a parameter 
 addtwice f x = f (f x)
 
+val:: a->a
+--polymorphic function, can take any type
+val = \x -> x
+-- anonymous lambda function, \ [arg1 argx] -> output 
+
+fib :: Integer -> Integer 
+fib m = case m of 
+  0->0
+  1->1
+  n-> fib(n-1) + fib(n-2)
+
 main = do
   n <- getLine 
   --input
@@ -52,3 +63,12 @@ main = do
   print (addtwice inc 2)
   print ( map (addtwice inc) lst)
   --map maps function to each element in list here
+  print(map ( +1) lst)
+  print (val "awdh")
+  print (val 5)
+  print (take 5 (iterate (2*)1))
+  --take takes first n elements
+  --iterate creates infinite where it applies function(2*) to 2nd argument(1), then first output and so on
+  print(fib 7)
+  print( addtwice inc $ fib 5)
+  -- $ applies right function to left function 
