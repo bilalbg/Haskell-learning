@@ -3,7 +3,7 @@ name:               myircbot
 version:            0.1.0.0
 
 -- A short (one-line) description of the package.
--- synopsis: Creating an IRCbot with Haskell
+-- synopsis:
 
 -- A longer description of the package.
 -- description:
@@ -14,12 +14,14 @@ version:            0.1.0.0
 -- The license under which the package is released.
 -- license:
 author:             bilalbg
-maintainer:         33909526+Bilalbg@users.noreply.github.com
+maintainer:         bilal.baig316@gmail.com
 
 -- A copyright notice.
 -- copyright:
 -- category:
-extra-source-files: CHANGELOG.md
+extra-source-files:
+    CHANGELOG.md
+    README.md
 
 executable myircbot
     main-is:          Main.hs
@@ -29,6 +31,6 @@ executable myircbot
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
-    build-depends:    base ^>=4.15.0.0
+    build-depends:    base ^>=4.14.3.0
     hs-source-dirs:   app
     default-language: Haskell2010
