@@ -1,5 +1,5 @@
 --not hackerrank
---return middle char if odd len, else return 2 middle chars 
+--return the middle char if odd len, else return 2 middle chars 
 
 middlechar :: String -> String 
 middlechar s 
